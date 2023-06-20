@@ -1,0 +1,24 @@
+L = [] #initialise the list
+
+N = int(input())
+
+for i in range(0, N):
+    s = input().split() #Takes a line of input from the user, splits it into a list using .split() method. Each split of the input represents a command (list operation).
+    
+    #split() splits a string into list. It has 2 parameters split(delimiter, no. of splits), Delimiter can be anything like whitespaces, commas and 
+    no. of splits represents how many splits to take out from the original string that means we always have no. of splits + 1 elements in the final list. 
+
+    if s[0] == 'insert':
+        L.insert(int(s[1]), int(s[2])) #inserts value of s[2] at s[1]. Second parameter is the value and first parameter is the index. 
+    elif s[0] == 'print':
+        print (L) #prints the list
+    elif s[0] == 'remove': #removes the first occurence of the element 
+        L.remove(int(s[1]))
+    elif s[0] == 'append': #adds element towards the end of the list. To add multiple elements use the extend() method. 
+        L.append(int(s[1]))
+    elif s[0] == 'sort': #sorts list in ascending order
+        L.sort()
+    elif s[0] == 'pop': #pops the last element in the list
+        L.pop()
+    elif s[0] == 'reverse': #reverse the list
+        L.reverse()
