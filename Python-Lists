@@ -3,7 +3,7 @@ L = [] #initialise the list
 N = int(input())
 
 for i in range(0, N):
-    s = input().split() #Takes a line of input from the user, splits it into a list using .split() method. Each split of the input represents a command (list operation).
+    s = input().split() #Takes a line of input from the user, splits it into a list using .split(). Each split of the input represents a command (list operation).
     
     #split() splits a string into list. It has 2 parameters split(delimiter, no. of splits), Delimiter can be anything like whitespaces, commas and 
     no. of splits represents how many splits to take out from the original string that means we always have no. of splits + 1 elements in the final list. 
