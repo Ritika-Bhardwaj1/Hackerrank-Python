@@ -1,0 +1,16 @@
+n = int(input())
+scores = list(map(int,input().split())) 
+scores1 =set(scores) 
+scores2 =sorted(scores1)
+print(scores2[-2]) 
+
+EXPLANTION:
+
+1. #initialise a list scores. The map() method has 2 parameters where the first parameter the data type into which we want to map our 
+second parameter. 
+2. #split() is a string method that splits a string into a list of substrings based on a delimiter.
+3. #set() is used to remove duplicate values from the list, since we have to find the runner up score we remove duplicate values to 
+avoid ambiguity. 2 people can have the highest score and upon using [-2] as index it will return the higest score itself upon sorting. 
+4. #with set() we cannot use sort() method on python listed, therefore we use sorted(list to sort). Sorted sorts the list mentioned in 
+the parenthesis. 
+5. #after sorting, it gives the second largest element of the list.  
