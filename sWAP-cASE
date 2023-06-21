@@ -1,0 +1,18 @@
+def swap_case(s):
+    n = len(s)
+    newStr = ""
+    for i in range(0, n):
+        char = s[i]
+        if char.isupper():
+            char = char.lower()
+            newStr = newStr+char
+        else:
+            char = char.upper()
+            newStr = newStr+char
+    return newStr
+    #return s.swapcase() #swaps cases in python
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
