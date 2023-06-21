@@ -1,0 +1,6 @@
+s = input()
+s = s.split (" ") 
+# s.split(delimiter) splits the string into a list at points wherever it finds the delimiter
+s = "-".join (s)
+# "joining symbol".join(s) joins the split string using the joining symbol
+print (s)
