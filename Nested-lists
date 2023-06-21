@@ -1,0 +1,11 @@
+N  = int(input())
+nested_lists = []
+for x in range(N):
+    name = input()
+    marks = float(input())
+    nested_lists.append([name,marks])
+    
+mark = sorted(set(map(lambda x: x[1], nested_lists))) [1]
+for n, m in sorted(filter(lambda x: x[1] == mark, nested_lists)):
+    #This line iterates over the sorted and filtered list of student information to find and print the names of students who have the second lowest mark.
+    print(n)
