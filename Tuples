@@ -1,0 +1,5 @@
+n = int(input()) 
+int_list = list(map(int, input().split())) #random n integers numbers as inputs, if we use a for loop it will take values till n
+t = tuple(int_list)
+hash_val = hash(t)
+print(hash_val)
