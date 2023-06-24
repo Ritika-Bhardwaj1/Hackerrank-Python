@@ -1,0 +1,19 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+def solve(s):
+    ans = s.split(' ')                         #splits the sentence into words 
+    ans1 = (((i.capitalize() for i in ans)))   #capitalize() is used to capitalize the first letter of each word 
+    return ' '.join(ans1)                      #join all the words into a sentence by using space 
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    s = input()
+    result = solve(s)
+    fptr.write(result + '\n')
+    fptr.close()
