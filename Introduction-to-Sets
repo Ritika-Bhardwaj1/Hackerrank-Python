@@ -1,0 +1,14 @@
+def average(array):
+    set1 = set(array)   #convert the array into set. Set is an unordered data structure with no duplicate elements. 
+                        An array can have duplicate elements
+    sum=0
+    for i in set1:
+        sum = sum + i
+        avg = sum / len(set1)
+    return avg
+        
+if __name__ == '__main__':
+    n = int(input())
+    arr = list(map(int, input().split()))
+    result = average(arr)
+    print(result)
