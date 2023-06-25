@@ -1,0 +1,6 @@
+e = int(input())
+e = set(map(int,input().split())) #initializing non-empty set
+f = int(input())
+f = set(map(int,input().split()))
+u = e.union(f)
+print(len(u))
