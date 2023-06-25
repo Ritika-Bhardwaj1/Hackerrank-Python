@@ -1,0 +1,18 @@
+A = int(input())
+A = set(input().split())
+N = int(input())
+
+for i in range(N):
+    function, len_B = input().split()
+    B = input().split()
+    
+    if function=='intersection_update':
+        A.intersection_update(B)
+    elif function=='update':
+        A.update(B)
+    elif function=='difference_update':
+        A.difference_update(B)
+    else: #symmetric_difference_update
+        A.symmetric_difference_update(B)
+
+print(sum(list(map(int, A)))) #maps int values to A, makes a list of them. sum() is used to concatenate them all together. 
