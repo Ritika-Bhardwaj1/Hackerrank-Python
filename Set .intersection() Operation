@@ -1,0 +1,6 @@
+e = int(input())
+e = set(map(int, input().split()))
+f = int(input())
+f = set(map(int, input().split()))
+i = e.intersection(f)
+print(len(i))
